@@ -36,7 +36,8 @@ button:focus {
   margin-bottom: 50px;
 }
 
-.container-fluid > * {
+.container-custom > * {
+  color: #fff;
   background-color: rgba(255, 255, 255, 0.15);
   border: 1px solid #fff;
   border-radius: 2px;
@@ -45,9 +46,10 @@ button:focus {
   -webkit-box-pack: justify;
       -ms-flex-pack: justify;
           justify-content: space-between;
+  text-align: center;
 }
 
-.container-fluid > div:hover {
+.container-custom > div:hover {
   background-color: rgba(255, 255, 255, 0.25);
 }
 
