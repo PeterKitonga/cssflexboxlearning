@@ -1,0 +1,17 @@
+/* =====================
+   CSS FLEXBOX
+   ===================== */
+
+.bg-light .image-center {
+   max-width: 500px;
+   margin: 0 auto;
+}
+
+.image-center img {
+   width: 500px;
+   
+}
+
+.container-custom {
+   display: flex; /* By default the main axis is horizontal and cross axis is vertical */
+}

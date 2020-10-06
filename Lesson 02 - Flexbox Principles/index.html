@@ -1,0 +1,78 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    
+    <!-- Font -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Bubblegum+Sans|Nova+Mono|Roboto+Condensed">
+
+    <!-- Base CSS-->
+    <link rel="stylesheet" href="../assets/css/base.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="assets/css/custom.css">
+    
+    <title>Flexbox Principles</title>
+</head>
+<body>
+    <div class="container-fluid">
+        <div class="row my-3">
+            <div class="col">
+                <div class="shadow-lg p-5 mb-5 bg-white rounded">
+                    <div class="d-flex flex-row justify-content-between align-items-center">
+                        <div class="p-2"><a class="btn btn-outline-primary btn-sm" href="/Lesson 01 - Flexbox Use" role="button"><< Back</a></div>
+                        <div class="p-2"><h1 class="display-4">Flexbox Principles</h1> </div>
+                        <div class="p-2"><a class="btn btn-outline-success btn-sm" href="/Lesson 03 - Flex Containers: flex-direction" role="button">Next >></a></div>                        
+                    </div>
+                    <hr>
+                    <p>In this lesson, I learnt about the various terminologies and principles of flexbox.</code></p>
+                    <hr>
+                    <section>                                    
+                        <div class="p-3 mb-2 bg-light">
+                            <h4><b>Overview</b></h4>
+                            <div class="image-center">
+                                <img src="../assets/images/flexbox-basic-terminology.svg" alt="Basic terminology">
+                            </div>
+                            <p>In the image above we get to see how flexbox works. Items in flexbox are laid out following either the main axis (from main-start to main-end) or the cross axis (from cross-start to cross-end). Here we see that we have various components namely:</p>
+                            <ol type="i">
+                                <li><b>Main Axis: </b>This is the primary axis along which flex items are laid out. This depends on the <code>flex-direction</code> property. By default the main axis is horizontal</li>
+                                <li><b>Main start | Main end: </b>Defines how flex items are placed in the flex container starting from main-start and going to main-end.</li>
+                                <li><b>Main size: </b>This is the size(width/height) of flex items in the main dimension.</li>
+                                <li><b>Cross Axis: </b>This axis is perpendicular to the main axis. Its direction depends on the main axis direction.</li>
+                                <li><b>Cross start | Cross end: </b>Flex lines are filled with items and placed into the container starting on the cross-start side of the flex container and going toward the cross-end side.</li>
+                                <li><b>Cross size: </b>This is the size(width/height) of flex items in the cross dimension.</li>
+                            </ol>
+                            <h4><b>Example</b></h4>
+                            <h5><b>HTML</b></h5>
+                            <hr>
+                            <pre class="html4strict" style="font-family:monospace;"><ol><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #009900;">&lt;section <span style="color: #000066;">class</span><span style="color: #66cc66;">=</span><span style="color: #ff0000;">&quot;container-custom&quot;</span>&gt;</span><span style="color: #808080; font-style: italic;">&lt;!-- flex container --&gt;</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">    <span style="color: #009900;">&lt;<span style="color: #000000; font-weight: bold;">div</span>&gt;&lt;<span style="color: #66cc66;">/</span><span style="color: #000000; font-weight: bold;">div</span>&gt;</span><span style="color: #808080; font-style: italic;">&lt;!-- flex item --&gt;</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">    <span style="color: #009900;">&lt;<span style="color: #000000; font-weight: bold;">div</span>&gt;&lt;<span style="color: #66cc66;">/</span><span style="color: #000000; font-weight: bold;">div</span>&gt;</span><span style="color: #808080; font-style: italic;">&lt;!-- flex item --&gt;</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">    <span style="color: #009900;">&lt;<span style="color: #000000; font-weight: bold;">div</span>&gt;&lt;<span style="color: #66cc66;">/</span><span style="color: #000000; font-weight: bold;">div</span>&gt;</span><span style="color: #808080; font-style: italic;">&lt;!-- flex item --&gt;</span></div></li><li style="font-weight: bold; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">    <span style="color: #009900;">&lt;<span style="color: #000000; font-weight: bold;">div</span>&gt;&lt;<span style="color: #66cc66;">/</span><span style="color: #000000; font-weight: bold;">div</span>&gt;</span><span style="color: #808080; font-style: italic;">&lt;!-- flex item --&gt;</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #009900;">&lt;<span style="color: #66cc66;">/</span>section&gt;</span></div></li></ol></pre>
+                            
+                            <h5><b>CSS</b></h5>
+                            <hr>
+                            <pre class="sass" style="font-family:monospace;"><ol><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">.container-custom <span style="color: #00AA00;">&#123;</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;">   <span style="color: #000000; font-weight: bold;">display</span><span style="color: #00AA00;">:</span> flex<span style="color: #00AA00;">;</span> <span style="color: #006600; font-style: italic;">/* By default the main axis is horizontal and cross axis is vertical */</span></div></li><li style="font-weight: normal; vertical-align:top;"><div style="font: normal normal 1em/1.2em monospace; margin:0; padding:0; background:none; vertical-align:top;"><span style="color: #00AA00;">&#125;</span></div></li></ol></pre>
+                            <hr>
+                            <section class="container-custom">
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                                <div></div>
+                            </section>
+                        </div>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+</body>
+</html>
