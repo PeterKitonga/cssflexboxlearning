@@ -1,0 +1,17 @@
+/* =====================
+   CSS FLEXBOX
+   ===================== */
+
+.container-custom {
+   display: flex;
+   /*
+   * This property defines the direction of main axis of the flex container.
+   * This inturn affects how the flex items are placed in the main axis.
+   * Values include: row | row-reverse | column | column-reverse.
+   * (row) values define the main axis horizontally and (column) values
+   * vertically.
+   * The (column) values can be used to define the overall layout of the
+   * webpage and (row) values can define the layout of each section of a webpage.
+   */
+   flex-direction: column;
+}
