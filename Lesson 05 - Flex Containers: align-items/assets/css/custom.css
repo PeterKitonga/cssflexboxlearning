@@ -1,0 +1,33 @@
+/* =====================
+   CSS FLEXBOX
+   ===================== */
+
+.container-custom {
+   display: flex;
+   flex-direction: row;
+   justify-content: center;
+   /*
+   * It defines the alignment along the cross axis. 
+   * Values include: stretch(default) | flex-start | flex-end | center | baseline(baseline of text)
+   * More info: https://css-tricks.com/almanac/properties/a/align-items/
+   */
+   align-items: center;
+   border: solid 1px green;
+   height: 200px;
+}
+
+.container-custom div {
+   width: 200px;
+}
+
+.container-custom div:nth-child(2n) {
+   width: 400px;
+}
+
+.container-custom div:nth-child(3) {
+   font-size: 35px;
+}
+
+.container-custom div:last-child {
+   font-size: 50px;
+}
