@@ -1,0 +1,23 @@
+/* =====================
+   CSS FLEXBOX
+   ===================== */
+
+.container-custom {
+   display: flex;
+   flex-direction: row;
+   /*
+   * It defines the alignment along the main axis. 
+   * It helps distribute extra free space of flex items.
+   * Values include: flex-start(default) | flex-end | center | space-between | space-around | space-evenly
+   * More info: https://css-tricks.com/almanac/properties/j/justify-content/
+   */
+   justify-content: center;
+}
+
+.container-custom div {
+   width: 200px;
+}
+
+.container-custom div:nth-child(2n) {
+   width: 400px;
+}
