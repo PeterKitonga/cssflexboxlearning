@@ -1,0 +1,23 @@
+/* =====================
+   CSS FLEXBOX
+   ===================== */
+
+.container-custom {
+   display: flex;
+   flex-direction: row;
+   justify-content: flex-start;
+   align-items: center;
+   /*
+   * This property defines whether the flex items are forced in a line or wrapped into multiple lines. 
+   * Values include: nowrap(default) | wrap | wrap-reverse
+   * This property can be combined with the flex-direction property into one 'flex-flow'. e.g flex-flow: row nowrap;
+   * More info: https://css-tricks.com/almanac/properties/f/flex-wrap/
+   */
+   flex-wrap: wrap;
+   border: solid 1px green;
+   height: 200px;
+}
+
+.container-custom div {
+   width: 240px;
+}
