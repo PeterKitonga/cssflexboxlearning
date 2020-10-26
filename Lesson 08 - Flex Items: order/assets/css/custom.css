@@ -1,0 +1,38 @@
+/* =====================
+   CSS FLEXBOX
+   ===================== */
+
+.container-custom {
+   display: flex;
+   flex-flow: row wrap; /* flex-direction and flex-wrap combined */
+   justify-content: space-evenly;
+   align-items: flex-start;
+   align-content: center;
+   border: solid 1px green;
+   height: 200px;
+}
+
+.container-custom div {
+   width: 240px;
+   /*
+   * This property changes order in which flex items are displayed. 
+   * The larger the number the further the item will be placed.
+   * More info: https://css-tricks.com/almanac/properties/o/order/
+   */
+   order: 0;
+}
+
+.container-custom div:nth-child(7) {
+   background-color: darkblue;
+   order: -1;
+}
+
+.container-custom div:nth-child(2) {
+   background-color: darkblue;
+   order: 1;
+}
+
+.container-custom div:nth-child(5) {
+   background-color: darkblue;
+   order: 2;
+}
