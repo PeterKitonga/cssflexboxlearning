@@ -1,0 +1,43 @@
+/* =====================
+   CSS FLEXBOX
+   ===================== */
+
+.container-custom {
+   display: flex;
+   flex-flow: row wrap; /* flex-direction and flex-wrap combined */
+   justify-content: flex-start;
+   align-items: flex-start;
+   border: solid 1px green;
+   height: 200px;
+}
+
+.container-custom div {
+   width: 240px;
+   order: 0;
+}
+
+.container-custom div:nth-child(2) {
+   background-color: darkblue;
+   order: 1;
+}
+
+.container-custom div:nth-child(3) {
+   background-color: orangered;
+   /*
+   * This property overrides the align-items value for specific flex items. 
+   * It uses the same values as the align-items property.
+   * Value include: stretch(default) | flex-start | flex-end | center | baseline(baseline of text)
+   * More info: https://css-tricks.com/almanac/properties/a/align-self/
+   */
+   align-self: flex-end;
+}
+
+.container-custom div:nth-child(5) {
+   background-color: darkblue;
+   order: 2;
+}
+
+.container-custom div:nth-child(6) {
+   background-color: darkblue;
+   order: -1;
+}
