@@ -1,0 +1,27 @@
+/* =====================
+   CSS FLEXBOX
+   ===================== */
+
+.container-custom {
+   display: flex;
+   flex-flow: row nowrap; /* flex-direction and flex-wrap combined */
+   justify-content: center;
+   align-items: center;
+   border: solid 1px green;
+   width: 400px; /* let's define a width for the flex container */
+}
+
+.container-custom div {
+   width: 200px;
+   /*
+   * This property determines how much a flex item will shrink relative to the rest of the flex items.
+   * The default value is set to 1. The higher the value the more space will be shaved off from an item.
+   * More info: https://css-tricks.com/almanac/properties/f/flex-shrink/
+   */
+   flex-shrink: 1;
+}
+
+.container-custom div:nth-child(2n + 1) {
+   background-color: darkblue;
+   flex-shrink: 2;
+}
