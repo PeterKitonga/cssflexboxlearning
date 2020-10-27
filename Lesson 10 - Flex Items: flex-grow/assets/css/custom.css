@@ -1,0 +1,26 @@
+/* =====================
+   CSS FLEXBOX
+   ===================== */
+
+.container-custom {
+   display: flex;
+   flex-flow: row nowrap; /* flex-direction and flex-wrap combined */
+   justify-content: center;
+   align-items: center;
+   border: solid 1px green;
+}
+
+.container-custom div {
+   width: 100px;
+   /*
+   * This property dictates the amount of available space a flex item wound take in the flex container.
+   * The higher the value the more space the item will take.
+   * More info: https://css-tricks.com/almanac/properties/f/flex-grow/
+   */
+   flex-grow: 1;
+}
+
+.container-custom div:nth-child(2n + 1) {
+   background-color: darkblue;
+   flex-grow: 2;
+}
