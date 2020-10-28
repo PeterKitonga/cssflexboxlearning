@@ -1,0 +1,29 @@
+/* =====================
+   CSS FLEXBOX
+   ===================== */
+
+.container-custom {
+   display: flex;
+   flex-flow: row nowrap; /* flex-direction and flex-wrap combined */
+   justify-content: center;
+   align-items: center;
+   border: solid 1px green;
+   width: 800px; /* let's define a width for the flex container */
+}
+
+.container-custom div {
+   /*
+   * This specifies the base size of a flex item before space is allocated depending on the set values for them.
+   * The default value is set to 0. Negative values passed are invalid.
+   * More info: https://css-tricks.com/almanac/properties/f/flex-basis/
+   *
+   * Often this property is used together with flex-grow and flex shrink. For that there is a shorthand property
+   * like so flex: (grow value) (shrink value) (basis value) e.g. flex: 1 1 100px;
+   */
+   flex-basis: 200px;
+}
+
+.container-custom div:nth-child(2n + 1) {
+   background-color: darkblue;
+   flex-basis: 100px;
+}
