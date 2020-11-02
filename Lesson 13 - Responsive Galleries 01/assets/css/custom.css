@@ -1,0 +1,29 @@
+/* =====================
+   CSS FLEXBOX
+   ===================== */
+
+.grid {
+   display: flex;
+}
+
+.gutters {
+   margin: -10px 0 10px -10px;
+}
+
+.gutters > .cell {
+   padding: 10px 0 0 10px;
+}
+
+.cell {
+   flex: 1; /* defined as 1 1 0% */
+}
+
+.cell > div {
+   border: 1px solid rgba(255, 123, 100, .8);
+   padding: 10px;
+   height: 100%;
+}
+
+.large {
+   flex-grow: 4;
+}
