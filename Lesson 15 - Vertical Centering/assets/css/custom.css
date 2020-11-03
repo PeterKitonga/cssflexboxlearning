@@ -1,0 +1,24 @@
+/* =====================
+   CSS FLEXBOX
+   ===================== */
+
+.vertical-center {
+   display: flex;
+   height: 200px;
+   /*
+   * Using both align-items and justify-content as 'center'
+   * will align the flex items in the exact center of the flex container
+   */
+   align-items: center;
+   justify-content: center;
+   border: 1px solid rgba(247, 178, 166, 0.8);
+}
+
+.vertical-center-item {
+   border: 1px solid rgba(11, 177, 8, 0.8);
+   padding: 10px;
+}
+
+.vertical-center p {
+   margin: 0;
+}
