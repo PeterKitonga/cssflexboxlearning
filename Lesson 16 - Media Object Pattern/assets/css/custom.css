@@ -1,0 +1,25 @@
+/* =====================
+   CSS FLEXBOX
+   ===================== */
+
+.media-custom {
+   padding: 40px;
+   display: flex;
+   flex-flow: row wrap;
+   border: 1px solid rgba(0, 0, 0, .2);
+}
+
+.figure-custom {
+   flex: 1 1 30%;
+   align-self: flex-start;
+   border-radius: 10px;
+}
+
+.media-body-custom {
+   flex: 1 1 70%
+}
+
+.media-body-custom p,
+.media-body-custom section {
+   margin: 0 40px 20px;
+}
