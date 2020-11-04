@@ -1,0 +1,42 @@
+/* =====================
+   CSS FLEXBOX
+   ===================== */
+
+.layout-showcase {
+   display: flex;
+   flex-direction: column;
+   border: 1px solid rgba(0, 0, 0, .4);
+   min-height: 100vh;
+   margin: 0;
+}
+
+.layout-showcase #header, .layout-showcase #footer {
+   text-align: center;
+   padding: 20px;
+}
+
+.layout-showcase #main {
+   display: flex;
+   flex-grow: 1;
+}
+
+.layout-showcase #main * {
+   padding: 20px;
+   border-top: 1px solid rgba(0, 0, 0, .4);
+   border-bottom: 1px solid rgba(0, 0, 0, .4);
+}
+
+.layout-showcase #content {
+   flex: 4 1 0%;
+   border-right: 1px solid rgba(0, 0, 0, .4);
+   border-left: 1px solid rgba(0, 0, 0, .4);
+}
+
+.layout-showcase #secondary {
+   flex: 1 1 0%;
+   order: -1;
+}
+
+.layout-showcase #tertiary {
+   flex: 1 1 0%;
+}
